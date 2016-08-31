@@ -22,13 +22,14 @@ Partial Class frmSplash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblNmae = New System.Windows.Forms.Label()
         Me.lblmsg = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.picStorks = New System.Windows.Forms.PictureBox()
         Me.piclguanas = New System.Windows.Forms.PictureBox()
-        Me.btnExit = New System.Windows.Forms.Button()
+        Me.tmrExit = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picStorks, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.piclguanas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,14 +93,10 @@ Partial Class frmSplash
         Me.piclguanas.TabIndex = 3
         Me.piclguanas.TabStop = False
         '
-        'btnExit
+        'tmrExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(288, 16)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnExit.TabIndex = 6
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.tmrExit.Enabled = True
+        Me.tmrExit.Interval = 4000
         '
         'frmSplash
         '
@@ -107,7 +104,7 @@ Partial Class frmSplash
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(389, 301)
-        Me.Controls.Add(Me.btnExit)
+        Me.ControlBox = False
         Me.Controls.Add(Me.picStorks)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.piclguanas)
@@ -116,9 +113,9 @@ Partial Class frmSplash
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frmSplash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Crighton Zoo"
         CType(Me.picStorks, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.piclguanas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -132,5 +129,5 @@ Partial Class frmSplash
     Friend WithEvents piclguanas As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents picStorks As PictureBox
-    Friend WithEvents btnExit As Button
+    Friend WithEvents tmrExit As Timer
 End Class
