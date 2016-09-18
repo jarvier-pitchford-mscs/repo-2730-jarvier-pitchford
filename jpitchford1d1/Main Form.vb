@@ -3,7 +3,7 @@
 '            items sold and the total sales
 ' Programmer: <Jarvier Pitchford> on < 9/7/2016>
 
-
+Option Strict On
 
 Public Class frmMain
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -25,9 +25,12 @@ Public Class frmMain
 
     Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
         ' calculate number of items sold and total sales
+        lblTotalItems.Text = Format(Val(txtDonuts.Text) + Val(Txtmuffins.Text), "0")
+        lblTotalSales.Text = Format(Val(lblTotalItems.Text) * 0.5, "currency")
+        'lblTotalSales.Text = Format(lblTotalSales.Text, "currency")
+    End Sub
 
-        lblTotalItems.Text = Val(txtDonuts.Text) + Val(Txtmuffins.Text)
-        lblTotalSales.Text = Val(lblTotalItems.Text) * 0.5
-        lblTotalSales.Text = Format(lblTotalSales.Text, "currency")
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
     End Sub
 End Class
