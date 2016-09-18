@@ -28,4 +28,8 @@ Public Class Form1
         lblProjBlue.Text = Format((1 + Val(txtProjincrease.Text)) * Val(txtBlue.Text), "currency")
         lblProjRasp.Text = Format((1 + Val(txtProjincrease.Text)) * Val(txtRasp.Text), "currency")
     End Sub
+
+    Private Sub txtProjincrease_TextChanged(sender As Object, e As EventArgs) Handles txtProjincrease.TextChanged
+
+    End Sub
 End Class
