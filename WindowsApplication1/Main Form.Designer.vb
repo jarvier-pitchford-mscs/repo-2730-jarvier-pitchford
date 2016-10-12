@@ -24,7 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
-        Me.btnPrint = New System.Windows.Forms.Button()
         Me.btnCalc = New System.Windows.Forms.Button()
         Me.txtRasp = New System.Windows.Forms.TextBox()
         Me.lblProjRasp = New System.Windows.Forms.Label()
@@ -40,6 +39,7 @@ Partial Class Form1
         Me.txtProjincrease = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnExit
@@ -55,27 +55,17 @@ Partial Class Form1
         'btnClear
         '
         Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(219, 257)
+        Me.btnClear.Location = New System.Drawing.Point(242, 257)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(86, 42)
         Me.btnClear.TabIndex = 52
         Me.btnClear.Text = "C&lear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
-        'btnPrint
-        '
-        Me.btnPrint.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrint.Location = New System.Drawing.Point(112, 257)
-        Me.btnPrint.Name = "btnPrint"
-        Me.btnPrint.Size = New System.Drawing.Size(86, 42)
-        Me.btnPrint.TabIndex = 51
-        Me.btnPrint.Text = "&Print"
-        Me.btnPrint.UseVisualStyleBackColor = True
-        '
         'btnCalc
         '
         Me.btnCalc.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalc.Location = New System.Drawing.Point(10, 257)
+        Me.btnCalc.Location = New System.Drawing.Point(1, 257)
         Me.btnCalc.Name = "btnCalc"
         Me.btnCalc.Size = New System.Drawing.Size(86, 42)
         Me.btnCalc.TabIndex = 50
@@ -213,14 +203,25 @@ Partial Class Form1
         Me.Label1.TabIndex = 36
         Me.Label1.Text = "Projected increase %"
         '
+        'Button1
+        '
+        Me.Button1.AutoSize = True
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(93, 253)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(140, 48)
+        Me.Button1.TabIndex = 54
+        Me.Button1.Text = "Retirement Form"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(424, 317)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.btnCalc)
         Me.Controls.Add(Me.txtRasp)
         Me.Controls.Add(Me.lblProjRasp)
@@ -247,7 +248,6 @@ Partial Class Form1
 
     Friend WithEvents btnExit As Button
     Friend WithEvents btnClear As Button
-    Friend WithEvents btnPrint As Button
     Friend WithEvents btnCalc As Button
     Friend WithEvents txtRasp As TextBox
     Friend WithEvents lblProjRasp As Label
@@ -263,4 +263,5 @@ Partial Class Form1
     Friend WithEvents txtProjincrease As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
 End Class

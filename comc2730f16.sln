@@ -11,13 +11,15 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "jpitchford1d1", "jpitchford
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "jpitchford1e1", "jpitchford1e1\jpitchford1e1.vbproj", "{6561F37D-DF96-41A1-B742-827B6202DC59}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "jPitchford1f1", "WindowsApplication1\jPitchford1f1.vbproj", "{614888CE-B7E4-421D-B4C6-4B3911467134}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "jPitchford2b1", "WindowsApplication1\jPitchford2b1.vbproj", "{614888CE-B7E4-421D-B4C6-4B3911467134}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jpitchford1g1", "Jpitchford1g1\Jpitchford1g1.vbproj", "{B2758C9C-CCD9-4C0E-B143-C72442C683A3}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "jpitchford1h1", "jpitchford1h1\jpitchford1h1.vbproj", "{26184FC6-650C-4D34-BBD9-15811C10FDAF}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jpitchford2a1", "Jpitchford2a1\Jpitchford2a1.vbproj", "{B659EADA-F7F8-4204-B06E-D5AFC48D5079}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "jPitchford2c1", "jPitchford2c1\jPitchford2c1.vbproj", "{680584B8-C891-43AE-8943-28AF066E7CFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{B659EADA-F7F8-4204-B06E-D5AFC48D5079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B659EADA-F7F8-4204-B06E-D5AFC48D5079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B659EADA-F7F8-4204-B06E-D5AFC48D5079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{680584B8-C891-43AE-8943-28AF066E7CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680584B8-C891-43AE-8943-28AF066E7CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680584B8-C891-43AE-8943-28AF066E7CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{680584B8-C891-43AE-8943-28AF066E7CFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
