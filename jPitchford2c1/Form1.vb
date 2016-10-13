@@ -18,7 +18,7 @@ Public Class Form1
     Private single1, single2, single3 As Single
     Private double1, double2, double3 As Double
     Private decimal1, decimal2, decimal3 As Decimal
-    Private date1, date2, date3 As Date
+    Private date1, date2, date3 As DateTime
     Private timespan2 As TimeSpan
 
     Private Sub btnSubtract_Click(sender As Object, e As EventArgs) Handles btnSubtract.Click
@@ -40,7 +40,7 @@ Public Class Form1
         lblDouble3.Text = double3.ToString()
         decimal3 = decimal1 - decimal2
         lblDecimal3.Text = decimal3.ToString()
-
+        lblDate3.Text = date1.Subtract(date2).ToString()
     End Sub
 
     Private Sub btnMutliply_Click(sender As Object, e As EventArgs) Handles btnMutliply.Click
@@ -107,6 +107,7 @@ Public Class Form1
         lblDouble3.Text = double3.ToString()
         decimal3 = decimal1 + decimal2
         lblDecimal3.Text = decimal3.ToString()
+        lblDate3.Text = date1.Add(timespan2).ToString()
 
 
     End Sub
@@ -192,6 +193,7 @@ Public Class Form1
 
         Date.TryParse(txtInput1.Text, date1)
         Date.TryParse(txtInput2.Text, date2)
+        TimeSpan.TryParse(txtInput2.Text, timespan2)
         lblDate1.Text = date1.ToString
         lblDate2.Text = date2.ToString
 
