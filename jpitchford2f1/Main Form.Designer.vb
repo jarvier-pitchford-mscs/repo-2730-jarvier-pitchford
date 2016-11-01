@@ -35,14 +35,14 @@ Partial Class frmMain
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.lblTax = New System.Windows.Forms.Label()
+        Me.lblRoomChg = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.lblTotalDue = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.lblResortFee = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -158,23 +158,23 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
         '
-        'Label14
+        'lblTax
         '
-        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label14.Location = New System.Drawing.Point(99, 90)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(93, 26)
-        Me.Label14.TabIndex = 5
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblTax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTax.Location = New System.Drawing.Point(99, 90)
+        Me.lblTax.Name = "lblTax"
+        Me.lblTax.Size = New System.Drawing.Size(93, 26)
+        Me.lblTax.TabIndex = 5
+        Me.lblTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label13
+        'lblRoomChg
         '
-        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label13.Location = New System.Drawing.Point(99, 58)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(93, 26)
-        Me.Label13.TabIndex = 4
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblRoomChg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblRoomChg.Location = New System.Drawing.Point(99, 58)
+        Me.lblRoomChg.Name = "lblRoomChg"
+        Me.lblRoomChg.Size = New System.Drawing.Size(93, 26)
+        Me.lblRoomChg.TabIndex = 4
+        Me.lblRoomChg.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label12
         '
@@ -221,25 +221,25 @@ Partial Class frmMain
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "Tax:"
         '
-        'Label15
+        'lblResortFee
         '
-        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label15.Location = New System.Drawing.Point(99, 122)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(93, 26)
-        Me.Label15.TabIndex = 6
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblResortFee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblResortFee.Location = New System.Drawing.Point(99, 122)
+        Me.lblResortFee.Name = "lblResortFee"
+        Me.lblResortFee.Size = New System.Drawing.Size(93, 26)
+        Me.lblResortFee.TabIndex = 6
+        Me.lblResortFee.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Label15)
+        Me.GroupBox2.Controls.Add(Me.lblResortFee)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.lblTotalDue)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label12)
-        Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Controls.Add(Me.Label14)
+        Me.GroupBox2.Controls.Add(Me.lblRoomChg)
+        Me.GroupBox2.Controls.Add(Me.lblTax)
         Me.GroupBox2.Location = New System.Drawing.Point(359, 1)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(223, 221)
@@ -284,13 +284,13 @@ Partial Class frmMain
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
+    Friend WithEvents lblTax As Label
+    Friend WithEvents lblRoomChg As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents lblTotalDue As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label15 As Label
+    Friend WithEvents lblResortFee As Label
     Friend WithEvents GroupBox2 As GroupBox
 End Class
