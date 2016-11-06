@@ -44,14 +44,25 @@ Partial Class frmMain
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lblResortFee = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblParkingFee = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.radKing = New System.Windows.Forms.RadioButton()
+        Me.radQueen = New System.Windows.Forms.RadioButton()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.radAtrium = New System.Windows.Forms.RadioButton()
+        Me.radStandard = New System.Windows.Forms.RadioButton()
+        Me.chkParkingFee = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(278, 228)
+        Me.btnExit.Location = New System.Drawing.Point(278, 353)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(97, 31)
         Me.btnExit.TabIndex = 2
@@ -60,7 +71,7 @@ Partial Class frmMain
         '
         'btnCalc
         '
-        Me.btnCalc.Location = New System.Drawing.Point(136, 228)
+        Me.btnCalc.Location = New System.Drawing.Point(136, 353)
         Me.btnCalc.Name = "btnCalc"
         Me.btnCalc.Size = New System.Drawing.Size(97, 31)
         Me.btnCalc.TabIndex = 1
@@ -77,7 +88,7 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(136, 23)
+        Me.GroupBox1.Location = New System.Drawing.Point(136, 148)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(217, 189)
         Me.GroupBox1.TabIndex = 0
@@ -232,6 +243,8 @@ Partial Class frmMain
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.lblParkingFee)
         Me.GroupBox2.Controls.Add(Me.lblResortFee)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.lblTotalDue)
@@ -240,18 +253,114 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.lblRoomChg)
         Me.GroupBox2.Controls.Add(Me.lblTax)
-        Me.GroupBox2.Location = New System.Drawing.Point(359, 1)
+        Me.GroupBox2.Location = New System.Drawing.Point(359, 126)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(223, 221)
-        Me.GroupBox2.TabIndex = 3
+        Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Charges"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(19, 193)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(60, 20)
+        Me.Label6.TabIndex = 9
+        Me.Label6.Text = "Parking:"
+        '
+        'lblParkingFee
+        '
+        Me.lblParkingFee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblParkingFee.Location = New System.Drawing.Point(99, 192)
+        Me.lblParkingFee.Name = "lblParkingFee"
+        Me.lblParkingFee.Size = New System.Drawing.Size(93, 26)
+        Me.lblParkingFee.TabIndex = 8
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.radKing)
+        Me.GroupBox3.Controls.Add(Me.radQueen)
+        Me.GroupBox3.Location = New System.Drawing.Point(136, 12)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(157, 100)
+        Me.GroupBox3.TabIndex = 3
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Type"
+        '
+        'radKing
+        '
+        Me.radKing.AutoSize = True
+        Me.radKing.Location = New System.Drawing.Point(34, 68)
+        Me.radKing.Name = "radKing"
+        Me.radKing.Size = New System.Drawing.Size(83, 24)
+        Me.radKing.TabIndex = 1
+        Me.radKing.Text = "0ne &king"
+        Me.radKing.UseVisualStyleBackColor = True
+        '
+        'radQueen
+        '
+        Me.radQueen.AutoSize = True
+        Me.radQueen.Checked = True
+        Me.radQueen.Location = New System.Drawing.Point(34, 27)
+        Me.radQueen.Name = "radQueen"
+        Me.radQueen.Size = New System.Drawing.Size(99, 24)
+        Me.radQueen.TabIndex = 0
+        Me.radQueen.TabStop = True
+        Me.radQueen.Text = "Two &queen"
+        Me.radQueen.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.radAtrium)
+        Me.GroupBox4.Controls.Add(Me.radStandard)
+        Me.GroupBox4.Location = New System.Drawing.Point(299, 12)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(139, 100)
+        Me.GroupBox4.TabIndex = 4
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "View"
+        '
+        'radAtrium
+        '
+        Me.radAtrium.AutoSize = True
+        Me.radAtrium.Location = New System.Drawing.Point(6, 60)
+        Me.radAtrium.Name = "radAtrium"
+        Me.radAtrium.Size = New System.Drawing.Size(72, 24)
+        Me.radAtrium.TabIndex = 1
+        Me.radAtrium.Text = "&Atrium"
+        Me.radAtrium.UseVisualStyleBackColor = True
+        '
+        'radStandard
+        '
+        Me.radStandard.AutoSize = True
+        Me.radStandard.Checked = True
+        Me.radStandard.Location = New System.Drawing.Point(6, 26)
+        Me.radStandard.Name = "radStandard"
+        Me.radStandard.Size = New System.Drawing.Size(87, 24)
+        Me.radStandard.TabIndex = 0
+        Me.radStandard.TabStop = True
+        Me.radStandard.Text = "&Standard"
+        Me.radStandard.UseVisualStyleBackColor = True
+        '
+        'chkParkingFee
+        '
+        Me.chkParkingFee.AutoSize = True
+        Me.chkParkingFee.Location = New System.Drawing.Point(444, 23)
+        Me.chkParkingFee.Name = "chkParkingFee"
+        Me.chkParkingFee.Size = New System.Drawing.Size(154, 24)
+        Me.chkParkingFee.TabIndex = 5
+        Me.chkParkingFee.Text = "Vehicle parking fee"
+        Me.chkParkingFee.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(594, 397)
+        Me.ClientSize = New System.Drawing.Size(612, 402)
+        Me.Controls.Add(Me.chkParkingFee)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnExit)
@@ -268,7 +377,12 @@ Partial Class frmMain
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnExit As Button
@@ -293,4 +407,13 @@ Partial Class frmMain
     Friend WithEvents Label9 As Label
     Friend WithEvents lblResortFee As Label
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents radKing As RadioButton
+    Friend WithEvents radQueen As RadioButton
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents radAtrium As RadioButton
+    Friend WithEvents radStandard As RadioButton
+    Friend WithEvents chkParkingFee As CheckBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents lblParkingFee As Label
 End Class
